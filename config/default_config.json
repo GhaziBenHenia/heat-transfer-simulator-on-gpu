@@ -1,0 +1,86 @@
+{
+  "simulation": {
+    "width": 100,
+    "height": 100,
+    "time_step": 0.01,
+    "total_time": 10.0,
+    "initial_temperature": 20.0,
+    "boundary_conditions": {
+      "top":    { "type": "fixed",     "value": 20.0 },
+      "bottom": { "type": "insulated" },
+      "left":   { "type": "fixed",     "value": 20.0 },
+      "right":  { "type": "insulated" }
+    }
+  },
+
+  "materials": [
+    {
+      "name": "Copper",
+      "thermal_conductivity": 400.0,
+      "thermal_diffusivity": 1.11e-4,
+      "color": [255, 165, 0]
+    },
+    {
+      "name": "Aluminum",
+      "thermal_conductivity": 205.0,
+      "thermal_diffusivity": 8.4e-5,
+      "color": [192, 192, 192]
+    },
+    {
+      "name": "Plastic",
+      "thermal_conductivity": 0.2,
+      "thermal_diffusivity": 1.0e-7,
+      "color": [50, 50, 200]
+    }
+  ],
+
+  "regions": [
+    {
+      "material": 0,
+      "x": 0,
+      "y": 0,
+      "width": 60,
+      "height": 100
+    },
+    {
+      "material": 1,
+      "x": 60,
+      "y": 0,
+      "width": 40,
+      "height": 50
+    },
+    {
+      "material": 2,
+      "x": 60,
+      "y": 50,
+      "width": 40,
+      "height": 50
+    }
+  ],
+
+  "heat_sources": [
+    {
+      "x": 10,
+      "y": 50,
+      "type": "fixed",
+      "value": 100.0,
+      "radius": 5
+    },
+    {
+      "x": 80,
+      "y": 25,
+      "type": "fixed",
+      "value": 80.0,
+      "radius": 3
+    }
+  ],
+
+  "output": {
+    "write_interval": 1.0,
+    "csv": true,
+    "image": true,
+    "video": false,
+    "gif": false,
+    "use_material_colors": true
+  }
+}

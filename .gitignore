@@ -1,0 +1,53 @@
+﻿# Build directories
+build/
+x64/
+Debug/
+Release/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio files
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Conan cache
+conan.lock
+conanbuild/
+conaninfo.txt
+
+# Executables & objects
+*.exe
+*.dll
+*.lib
+*.pdb
+*.obj
+*.o
+*.so
+
+# Logs and results
+*.log
+data/results/
+
+# Ignore VS backup and temporary files
+*.tmp
+*.bak
+*.ncb
+*.aps
+*.sdf
+*.cache
+
+# Other
+.DS_Store
+Thumbs.db
