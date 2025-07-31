@@ -51,3 +51,15 @@ data/results/
 # Other
 .DS_Store
 Thumbs.db
+
+
+# CMake user presets
+CMakeSettings.json
+CMakeUserPresets.json
+CMakePresets.json
+
+# Visual Studio
+.vs/
+
+# Output folder
+out/
